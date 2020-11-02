@@ -1,0 +1,54 @@
+//variables
+
+@import "_variables.less";
+
+//mixins
+@import "_namespaces.less";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: @box-sizing;
+}
+
+body{
+    background-color: @body-bg;
+}
+
+small{
+    font-size: @small-f-size;
+}
+ 
+.cards{
+    #borders.brtl(8px);
+    #borders.brbl(8px);
+}
+.main{
+    width: 100%;
+    margin-top: 70px;
+}
+.bg-light{
+    background-color: @white;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+h1{
+        font-size: 1.7em;
+        padding: 5px 10px;
+        font-weight: 600;
+}
+h2{
+    font-size: 1.5em;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.3em;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+@import "../common/_variables";
+@import "../layouts/layouts";
+@import "../common/_namespaces";
+@import "../common/theme";
+  .content-wrapper{
+    padding: @padding-box;
+    margin-bottom: 80px;
+    .box(0px);
+        .cards{
+          background-color: rgba(0, 0, 0, .3);
+          margin-bottom: 2rem;
+          border: @border-light-1;
+          height: 18em;
+          background-blend-mode: overlay;
+          background-image: var(--bg-cover);
+          background-size: cover;
+          background-repeat: no-repeat;
+          color: @white;
+          position: relative;
+          &:hover{
+            transform: scale(1.025);
+          }
+          h1{
+            font-size: 1.5em;
+            padding: 5px 10px;
+            font-weight: 500;
+          }
+          .info{
+            position: absolute;
+            bottom: 0;
+            padding: 2px 4px;
+            small{
+              font-size: .9em;
+            }
+          }
+        }
+
+  }
+
+.sidebar {
+  padding: @padding-box;
+  background-color: @white;
+  border: @border-light-1;
+  position: relative;
+        .categories-title{
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: @padding-box;
+          border-bottom: @border-light-2;
+          height: auto;
+          font-size: 1.2em;
+          font-weight: 800;
+          width: 100%;
+          box-shadow: 0px 1px 5px rgba(0,0,0,.165);
+          line-height: @line-height-base;
+          background-color: @white;
+        }
+        ul{
+          padding: @padding-box;
+          margin-top: calc(20px + 1em);
+          height: auto;
+          list-style: none;
+          li{
+            padding: @padding-text;
+            margin: 10px auto;
+            #borders.br(3px);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &:hover{
+              background-color: rgba(0,0,0,.165);
+            }
+            a{
+              text-decoration: none;
+              i{
+                font-size: 1.7em;
+                margin-right: 5px;
+              }
+            }
+            span{
+              font-size: @font-size-base;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+          }
+        }
+        @media screen and (max-width: 570px) {
+          visibility: hidden;
+        }
+}

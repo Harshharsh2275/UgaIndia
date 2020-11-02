@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f9f9;
+}
+small {
+  font-size: 0.8em;
+}
+.cards {
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.main {
+  width: 100%;
+  margin-top: 70px;
+}
+.bg-light {
+  background-color: #ffffff;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+h1 {
+  font-size: 1.7em;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5em;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 1.3em;
+  padding: 5px 10px;
+  font-weight: 400;
+}

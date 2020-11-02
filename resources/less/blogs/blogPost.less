@@ -1,0 +1,84 @@
+@import "../common/_variables";
+@import "../layouts/layouts";
+@import "../common/_namespaces";
+
+.blog-img-cont{
+    height: auto;
+    img{
+        width: 100%;
+    }
+}
+.blog-content{
+    .center(relative);
+    .blog-info,.sidebar{
+        .box(80px);
+    }
+    .blog-info{
+        h1{
+            font-size: 1.8em;
+        }
+        .author-info{
+            .dtnname{
+                font-size: 1.2em;
+                .profile-author{
+                    img{
+                        .profile-pic(40px);
+                    }
+                }
+                
+            }
+            .social-share{
+                display: flex;
+                justify-content: center;
+                .share-icon{
+                    .profile-pic(40px);
+                    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .sidebar{
+        .categories-title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: @padding-box;
+            border-bottom: @border-light-2;
+            height: auto;
+            font-size: 1.2em;
+            font-weight: 800;
+            width: 100%;
+            box-shadow: 0px 1px 5px rgba(0,0,0,.165);
+            line-height: @line-height-base;
+            background-color: @white;
+          }
+
+          .post-cont{
+              margin-top: calc(1.2em + 20px + 0.9em + 10px);
+              .post{
+                  padding: 0;
+                  padding-bottom: 6px;
+                  border-bottom: @border-light-2;
+                  line-height: @line-height-base;
+                  font-size: 1.1em;
+                  margin-top: 10px;
+                  .img-post{
+                      padding: 0;
+                      height: auto;
+                      img{
+                          width: 100%;
+                      }
+                  }
+                  .info-post{
+                      padding: 0;
+                      padding-left: 6px;
+                  }
+              }
+          }
+    }
+}

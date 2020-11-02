@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f9f9;
+}
+small {
+  font-size: 0.8em;
+}
+.cards {
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.main {
+  width: 100%;
+  margin-top: 70px;
+}
+.bg-light {
+  background-color: #ffffff;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+h1 {
+  font-size: 1.7em;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5em;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 1.3em;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+.content-wrapper {
+  padding: 10px 20px;
+  margin-bottom: 80px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 0px;
+}
+.content-wrapper .cards {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  height: 18em;
+  background-blend-mode: overlay;
+  background-image: var(--bg-cover);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  position: relative;
+}
+.content-wrapper .cards:hover {
+  transform: scale(1.025);
+}
+.content-wrapper .cards h1 {
+  font-size: 1.5em;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.content-wrapper .cards .info {
+  position: absolute;
+  bottom: 0;
+  padding: 2px 4px;
+}
+.content-wrapper .cards .info small {
+  font-size: 0.9em;
+}
+.sidebar {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  position: relative;
+}
+.sidebar .categories-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  height: auto;
+  font-size: 1.2em;
+  font-weight: 800;
+  width: 100%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.165);
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+.sidebar ul {
+  padding: 10px 20px;
+  margin-top: calc(20px + 1em);
+  height: auto;
+  list-style: none;
+}
+.sidebar ul li {
+  padding: 5px 10px;
+  margin: 10px auto;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.sidebar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.165);
+}
+.sidebar ul li a {
+  text-decoration: none;
+}
+.sidebar ul li a i {
+  font-size: 1.7em;
+  margin-right: 5px;
+}
+.sidebar ul li span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 570px) {
+  .sidebar {
+    visibility: hidden;
+  }
+}
